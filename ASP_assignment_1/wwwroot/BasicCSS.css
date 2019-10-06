@@ -10,3 +10,15 @@ ul {
     max-width: 1080px;
     text-align:center;
 }
+#collage {
+    width: 750px;
+}
+.list {
+    width:350px;
+}
+a {
+    text-decoration:none;
+}
+a:hover{
+    color:white;
+}

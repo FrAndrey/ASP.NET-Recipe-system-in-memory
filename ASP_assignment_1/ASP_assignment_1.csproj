@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Include="wwwroot\BasicCSS.css" />
+    <None Include="wwwroot\Pictures\collage.jpg" />
   </ItemGroup>
 
   <ItemGroup>
