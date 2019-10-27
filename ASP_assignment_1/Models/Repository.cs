@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ASP_assignment_1.Models
+namespace asgn2.Models
 {
     public class Repository
     {
-        private static List<Recipes> recipes = new List<Recipes>();
-        public static IEnumerable<Recipes> Recipes
+
+        public static IQueryable<Recipes> Recipes => new List<Recipes>
         {
-            get
-            {
-                return recipes;
-;
-            }
-        }
+            new Recipes {RecipeID =1, Name = "Salmon",Ingredients="Ssd", Description="Blabla"},
+            new Recipes {RecipeID =2, Name = "Chicken",Ingredients="Ssd", Description="Ulala"},
+            new Recipes {RecipeID =3, Name = "Duck",Ingredients="Ssd", Description="Mak"}
+        }.AsQueryable<Recipes>();
+
+
         public static void AddResponse(Recipes guestRecipe)
         {
-            recipes.Add(guestRecipe);
+            Recipes.ToList().Add(guestRecipe);
         }
 
 
