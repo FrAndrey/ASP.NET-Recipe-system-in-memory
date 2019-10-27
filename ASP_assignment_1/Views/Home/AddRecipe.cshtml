@@ -4,3 +4,16 @@
 }
 
     <h2>Add you favorite recipe</h2>
+    <h4><a asp-action="Index">Home</a></h4>
+    <img class="list" src="~/Pictures/burger.jpg" />
+    <form asp-action="Index">
+        <label for="name">Name: </label> <br />
+        <input type="text" >
+
+        <br /><br /><label for="name">Ingredients: </label> <br />
+        <textarea rows="3" cols="90"></textarea>
+
+        <br /><label for="msg">Steps for cooking</label> <br />
+        <textarea rows="7" cols="90"></textarea>
+        <br /><button type="submit">Send!</button>
+    </form>

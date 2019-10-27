@@ -1,1 +1,23 @@
 ﻿<h2>Tell us what do you think about recipes</h2>
+
+<h4><a asp-action="Index">Home</a></h4>
+<form asp-action="Index">
+
+    <select>
+        <option value="select">Select the recipe</option>
+        <option value="chicken">Chicken</option>
+        <option value="salmon">Salmon</option>
+        <option value="tacos">Tacos</option>
+    </select>
+    <select>
+        <option value="select">Rate out of 3:</option>
+        <option value="chicken">3 STAR!</option>
+        <option value="salmon">2 star</option>
+        <option value="tacos">1 star..</option>
+    </select>
+
+
+    <br /><label for="msg">Share your opinion: </label> <br />
+    <textarea rows="7" cols="90"></textarea>
+    <br /><button type="submit">Send!</button>
+</form>
