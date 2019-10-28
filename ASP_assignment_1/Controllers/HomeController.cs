@@ -10,10 +10,7 @@ namespace asgn2.Controllers
     public class HomeController : Controller
     {
 
-
-   
         public ViewResult Index() => View("Home");
-
 
         public ViewResult RecipeList()
         {

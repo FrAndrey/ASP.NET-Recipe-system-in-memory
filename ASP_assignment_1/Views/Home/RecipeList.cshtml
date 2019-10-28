@@ -1,4 +1,4 @@
-﻿@model IEnumerable<asgn2.Models.Recipes>
+﻿@model IQueryable<asgn2.Models.Recipes>
 
 
 @{
@@ -11,6 +11,7 @@
 {
 <div>
     <h3>@r.Name</h3>
+    <h5>@r.Ingredients.</h5>
     <p>@r.Description</p>
 </div>
 }
