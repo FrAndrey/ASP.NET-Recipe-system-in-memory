@@ -1,4 +1,4 @@
-﻿@model IQueryable<asgn2.Models.Recipes>
+﻿@model IEnumerable<asgn2.Models.Recipes>
 
 
 @{
@@ -11,7 +11,7 @@
 {
 <div>
     <h3>@r.Name</h3>
+    <a asp-action="ViewRecipe" asp-controller="Home" asp-route-id="@r.RecipeID">View Details</a>
     <h5>@r.Ingredients.</h5>
-    <p>@r.Description</p>
 </div>
 }

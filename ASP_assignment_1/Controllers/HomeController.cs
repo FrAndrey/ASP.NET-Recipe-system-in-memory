@@ -27,8 +27,18 @@ namespace asgn2.Controllers
             return View("Home");
         }
 
+        public ViewResult ViewRecipe(int id)
+        {
+            return View(Repository.Recipes 
+                .Where(r=> r.RecipeID == id)
+                );
+        }
+
+
+
+
         public ViewResult ReviewRecipe() => View();
-        public ViewResult ViewRecipe() => View();
+        
 
 
     }

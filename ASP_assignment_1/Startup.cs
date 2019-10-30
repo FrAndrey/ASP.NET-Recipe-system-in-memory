@@ -27,7 +27,29 @@ namespace asgn2
                 app.UseDeveloperExceptionPage();
             }
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
+            //app.UseMvcWithDefaultRoute();
+            app.UseMvc(
+                routes =>
+                {
+                    routes.MapRoute(
+                        name: "default",
+                        template: "",
+                        defaults: new { controller = "Home", action = "Index" }
+                        );
+                    routes.MapRoute(
+                        name: "main",
+                        template: "{controller}/{action}"
+                        );
+                    routes.MapRoute(
+                        name: "product",
+                        template: "{controller=Home}/{action=ViewRecipe}/{id}"
+                       
+                        );
+
+
+                }
+                ); 
+
         }
     }
 }
