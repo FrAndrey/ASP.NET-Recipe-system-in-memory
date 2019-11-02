@@ -14,7 +14,7 @@ namespace asgn2.Models
 
         public string Description { get; set; }
 
-
+        public string imagePath { get; set; }
 
 
 

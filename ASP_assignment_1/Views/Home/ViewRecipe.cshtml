@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<asgn2.Models.Recipes>
 
 @{
-   
+    
 }
 
 
@@ -9,4 +9,6 @@
 {
     <h3>@r.Name</h3>
     <h5>@r.Description</h5>
+    <img src="@Url.Content(r.imagePath)" />
+    
 }
