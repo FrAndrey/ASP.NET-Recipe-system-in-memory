@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace asgn2.Models
@@ -14,14 +15,20 @@ namespace asgn2.Models
         public string Description { get; set; }
 
 
-        /*public Recipes(int RecID, string nam, string Ingred, string Descr)
-        {
-            RecipeID = RecID;
-            Name = nam;
-            Ingredients = Ingred;
-            Description = Descr;
 
-        } */
+
+
+
+
+        // public static int globalRecipeID;
+        /* public Recipes(string nam, string Ingred, string Descr)
+         {
+             RecipeID = Interlocked.Increment(ref globalRecipeID);
+             Name = nam;
+             Ingredients = Ingred;
+             Description = Descr;
+
+         }*/
 
     }
 }

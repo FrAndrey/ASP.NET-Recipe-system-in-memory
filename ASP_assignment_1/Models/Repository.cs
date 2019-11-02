@@ -11,12 +11,17 @@ namespace asgn2.Models
 
         private static List<Recipes> allRecipes = new List<Recipes>()
         {
+              new Recipes {RecipeID=0, Name="Salmon",Ingredients="Ssd",Description="Blabla"},
+              new Recipes {RecipeID=1, Name = "Chicken",Ingredients="Ssd", Description="Ulala"},
+              new Recipes {RecipeID=2, Name = "Duck",Ingredients="Ssd", Description="Mak"}
+        };
 
-              new Recipes {RecipeID =1, Name = "Salmon",Ingredients="Ssd", Description="Blabla"},
-              new Recipes {RecipeID =2, Name = "Chicken",Ingredients="Ssd", Description="Ulala"},
-              new Recipes {RecipeID =3, Name = "Duck",Ingredients="Ssd", Description="Mak"}
-          };
 
+        
+             
+            
+
+        
         public static IEnumerable<Recipes> Recipes
         {
             get

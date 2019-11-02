@@ -36,14 +36,11 @@ namespace asgn2
                         template: "",
                         defaults: new { controller = "Home", action = "Index" }
                         );
-                    routes.MapRoute(
-                        name: "main",
-                        template: "{controller}/{action}"
-                        );
+                    
                     routes.MapRoute(
                         name: "product",
-                        template: "{controller=Home}/{action=ViewRecipe}/{id}"
-                       
+                        template: "{controller}/{action}/{id?}"
+
                         );
 
 
