@@ -16,6 +16,8 @@ namespace asgn2.Models
 
         public string imagePath { get; set; }
 
+        public int RecipeCategory { get; set; }
+
 
 
 

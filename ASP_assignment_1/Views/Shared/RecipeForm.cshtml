@@ -18,3 +18,12 @@
 <br />
 <label asp-for="Description">Description: </label><br />
 <textarea rows="7" cols="90" asp-for="Description"></textarea>
+
+<br />
+<label asp-for="RecipeCategory">If applicable</label><br />
+<select asp-for="RecipeCategory">
+    <option value="" >Choose category</option>
+    <option value="1">Fish</option>
+    <option value="2">Beef</option>
+    <option value="3">Chicken</option>
+</select>

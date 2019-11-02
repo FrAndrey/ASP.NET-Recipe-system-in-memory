@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<asgn2.Models.Recipes>
 
 @{
-    
+
 }
 
 
@@ -9,6 +9,18 @@
 {
     <h3>@r.Name</h3>
     <h5>@r.Description</h5>
-    <img src="@Url.Content(r.imagePath)" />
-    
+    <img class="builtPic" src="@Url.Content(r.imagePath)" />
+    @if (r.RecipeCategory == 1) //Fish
+    {
+        <img class="detailPic" src="@Url.Content("/Pictures/fish.jpg")" />
+    }
+    else if (r.RecipeCategory == 2) //Beef
+    {
+        <img class="detailPic" src="@Url.Content("/Pictures/steak.jpg")" />
+    }
+    else if (r.RecipeCategory == 3) //Chicken
+    {
+        <img class="detailPic" src="@Url.Content("/Pictures/chiken.png")" />
+    }
+
 }

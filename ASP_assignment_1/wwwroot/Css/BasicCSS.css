@@ -21,12 +21,27 @@ ul {
 }
 a {
     text-decoration: none;
-    color: darkorange;
+    color: red;
 }
 header {
     font-size:21px;
     
 }
+
+.builtPic {
+    width: 500px;
+    position: relative;
+    //left: 50%;
+   // transform: translate(50%,0%);
+}
+.detailPic {
+    width: 500px;
+    position: relative;
+   // right: 50%;
+    transform: translate(-50%,0%);
+}
+
+
 header a {
     padding-right:30px;
 }
@@ -35,6 +50,7 @@ table {
     left:50%;
     transform:translate(-50%,0%);
 }
+
 a:hover{
     color:white;
 }
