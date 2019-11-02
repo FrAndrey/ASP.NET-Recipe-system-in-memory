@@ -6,12 +6,34 @@
 }
 
 <h2>List of best Recipes</h2>
+<table>
+    <tr>
+        <th>
+            Recipe Name
 
-@foreach (var r in Model)
-{
-<div>
-    <h3>@r.Name</h3>
-    <a asp-action="ViewRecipe" asp-controller="Home" asp-route-id="@r.RecipeID">View Details</a>
-    <h5>@r.Ingredients.</h5>
-</div>
-}
+        </th>
+        <th>
+            Ingredients
+
+        </th>
+
+        <th>
+            Details
+        </th>
+        <th>
+            Add Review
+        </th>
+
+    </tr>
+    @foreach (var r in Model)
+    {
+<tr>
+
+    <td>@r.Name</td>
+    <td>@r.Ingredients.</td>
+    <td><a asp-action="ViewRecipe" asp-controller="Home" asp-route-id="@r.RecipeID">View</a></td>
+    <td><a asp-action="ReviewRecipe" asp-controller="Home" asp-route-id="@r.RecipeID">Add</a></td>
+</tr>
+    }
+</table>
+

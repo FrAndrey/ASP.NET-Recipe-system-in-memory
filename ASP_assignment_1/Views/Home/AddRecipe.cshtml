@@ -8,5 +8,5 @@
 <img class="list" src="~/Pictures/burger.jpg" />
 <form asp-action="AddRecipe" method="post">
     @await Html.PartialAsync("RecipeForm")
-    <br /><button type="submit">Send!</button>
+    <br /><button type="submit">Save</button><a asp-action="Index">Cancel</a>
 </form>
