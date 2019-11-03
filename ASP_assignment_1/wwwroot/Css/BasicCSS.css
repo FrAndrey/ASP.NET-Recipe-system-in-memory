@@ -21,7 +21,7 @@ ul {
 }
 a {
     text-decoration: none;
-    color: red;
+    color: darkorange;
 }
 header {
     font-size:21px;
@@ -37,8 +37,8 @@ header {
 .detailPic {
     width: 500px;
     position: relative;
-   // right: 50%;
-    transform: translate(-50%,0%);
+    //left: 50%;
+   // transform: translate(-50%,0%);
 }
 
 

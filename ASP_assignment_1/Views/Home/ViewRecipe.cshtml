@@ -8,8 +8,6 @@
 @foreach (var r in Model)
 {
     <h3>@r.Name</h3>
-    <h5>@r.Description</h5>
-    <img class="builtPic" src="@Url.Content(r.imagePath)" />
     @if (r.RecipeCategory == 1) //Fish
     {
         <img class="detailPic" src="@Url.Content("/Pictures/fish.jpg")" />
@@ -22,5 +20,9 @@
     {
         <img class="detailPic" src="@Url.Content("/Pictures/chiken.png")" />
     }
+    <h5>@r.Ingredients</h5>
+    <p>@r.Description</p>
+    <img class="builtPic" src="@Url.Content(r.imagePath)" />
+
 
 }
