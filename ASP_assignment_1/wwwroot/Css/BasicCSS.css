@@ -33,14 +33,18 @@ header {
     position: relative;
     //left: 50%;
    // transform: translate(50%,0%);
+   border-radius:7px;
 }
 .detailPic {
     width: 500px;
     position: relative;
     //left: 50%;
-   // transform: translate(-50%,0%);
+    // transform: translate(-50%,0%);
+    border-radius: 7px;
 }
-
+button {
+    margin-right:9px;
+}
 
 header a {
     padding-right:30px;

@@ -10,7 +10,14 @@
 <br />
 <label asp-for="Name">Name:</label><br />
 <input asp-for="Name" />
-
+<br />
+<label asp-for="RecipeCategory">If applicable</label><br />
+<select asp-for="RecipeCategory">
+    <option value="">Choose category</option>
+    <option value="1">Fish</option>
+    <option value="2">Beef</option>
+    <option value="3">Chicken</option>
+</select>
 <br /><br />
 <label asp-for="Ingredients">Ingredients: </label><br />
 <textarea rows="3" cols="90" asp-for="Ingredients"></textarea>
@@ -20,10 +27,4 @@
 <textarea rows="7" cols="90" asp-for="Description"></textarea>
 
 <br />
-<label asp-for="RecipeCategory">If applicable</label><br />
-<select asp-for="RecipeCategory">
-    <option value="" >Choose category</option>
-    <option value="1">Fish</option>
-    <option value="2">Beef</option>
-    <option value="3">Chicken</option>
-</select>
+
