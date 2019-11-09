@@ -7,7 +7,14 @@ namespace asgn2.Models
 {
     public interface IRecipeRepository
     {
+        IEnumerable<Recipes> Recipes { get; }
 
+    }
+
+
+    public static void AddResponse(Recipes guestRecipe)
+    {
+        allRecipes.Add(guestRecipe);
 
     }
 }

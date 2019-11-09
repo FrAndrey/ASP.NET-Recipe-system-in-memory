@@ -9,6 +9,14 @@ namespace asgn2.Controllers
 {
     public class HomeController : Controller
     {
+        private IRecipeRepository repository;
+
+        public HomeController(IRecipeRepository repo)
+        {
+            repository = repo;
+        }
+
+
 
         public ViewResult Index() => View("Home");
 

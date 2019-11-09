@@ -8,35 +8,16 @@ namespace asgn2.Models
 {
     public class Repository : IRecipeRepository
     {
-
-
-        private static List<Recipes> allRecipes = new List<Recipes>()
-        {
+        public IEnumerable<Recipes> Recipes => new List<Recipes>
+        { 
               new Recipes {RecipeID=0, Name="Salmon",Ingredients="Salmon, rice, lemon",Description="Put fish in the oven for 30 minutes",imagePath="~/pictures/salmon.jpg"},
               new Recipes {RecipeID=1, Name = "Chicken",Ingredients="Chicken, spices, marinade mix", Description="Bake 45 mins",imagePath="~/pictures/chiken.png"},
               new Recipes {RecipeID=2, Name = "Duck",Ingredients="Duck, grapefruit, potatoes", Description="Bake at least 1 hour",imagePath="~/pictures/duck.jpg"}
         };
+              
 
 
-        
-             
-            
 
-        
-        public static IEnumerable<Recipes> Recipes
-        {
-            get
-                {
-                return allRecipes;
-            }
-        }
-
-
-        public static void AddResponse(Recipes guestRecipe)
-        {
-            allRecipes.Add(guestRecipe);
-        
-        }
 
 
 
