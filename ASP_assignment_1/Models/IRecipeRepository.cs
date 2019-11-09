@@ -12,9 +12,8 @@ namespace asgn2.Models
     }
 
 
-    public static void AddResponse(Recipes guestRecipe)
-    {
-        allRecipes.Add(guestRecipe);
-
-    }
+   // public static void AddResponse(Recipes guestRecipe)
+   // {
+    //    allRecipes.Add(guestRecipe);
+   // }
 }

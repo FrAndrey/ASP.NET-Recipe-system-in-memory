@@ -22,7 +22,7 @@ namespace asgn2.Controllers
 
         public ViewResult RecipeList()
         {
-            return View(Repository.Recipes);
+            return View(repository.Recipes);
         }
 
         [HttpGet]
@@ -31,8 +31,8 @@ namespace asgn2.Controllers
         [HttpPost]
         public ViewResult AddRecipe(Recipes guestRecipe)
         {
-            Repository.AddResponse(guestRecipe);
-            return View("Home");
+            //Repository.AddResponse(guestRecipe);
+            //return View("Home");
         }
 
         public ViewResult ViewRecipe(int id)
