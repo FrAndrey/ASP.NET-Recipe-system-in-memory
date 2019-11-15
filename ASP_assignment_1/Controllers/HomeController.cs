@@ -29,18 +29,18 @@ namespace asgn2.Controllers
         public ViewResult AddRecipe() => View();
 
         [HttpPost]
-        public ViewResult AddRecipe(Recipes guestRecipe)
-        {
+        //public ViewResult AddRecipe(Recipes guestRecipe)
+       // {
             //Repository.AddResponse(guestRecipe);
             //return View("Home");
-        }
+       // }
 
-        public ViewResult ViewRecipe(int id)
-        {
-            return View(Repository.Recipes 
-                .Where(r=> r.RecipeID == id)
-                );
-        }
+     //   public ViewResult ViewRecipe(int id)
+    //    {
+       //     return View(Repository.Recipes 
+     //           .Where(r=> r.RecipeID == id)
+          //      );
+       // }
 
 
 

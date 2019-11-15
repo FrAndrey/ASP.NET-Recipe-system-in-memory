@@ -26,8 +26,9 @@ namespace asgn2
         {
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration["Data:RecipeSystemRecipes:ConnectionString"])
-
             );
+
+
 
             services.AddTransient<IRecipeRepository,EFRecipeRepository>();
             services.AddMvc();
@@ -60,7 +61,8 @@ namespace asgn2
 
 
                 }
-                ); 
+                );
+            SeedData.EnsurePopulated(app);
 
         }
     }
