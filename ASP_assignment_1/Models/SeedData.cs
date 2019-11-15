@@ -25,24 +25,21 @@ namespace asgn2.Models
                         Name = "Crispy Chicken",
                         Description = "This is delicious chicken in bread",
                         RecipeCategory = 3,
-                        Ingredients = "Chicken",
-                        RecipeID = 0
+                        Ingredients = "Chicken"
                     },
                      new Recipes
                      {
                          Name = "Salmon",
                          Description = "This is awesome Salmon",
                          RecipeCategory = 1,
-                         Ingredients = "Salmon",
-                         RecipeID = 1
+                         Ingredients = "Salmon"
                      },
                       new Recipes
                       {
                           Name = "Steak",
                           Description = "This is juicy Steak with Vegetables",
                           RecipeCategory = 2,
-                          Ingredients = "Angus Beef, Vegetables",
-                          RecipeID = 2
+                          Ingredients = "Angus Beef, Vegetables"
                       }
                     );
                 context.SaveChanges();
