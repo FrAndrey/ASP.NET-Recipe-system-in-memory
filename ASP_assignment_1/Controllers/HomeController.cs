@@ -16,8 +16,6 @@ namespace asgn2.Controllers
             repository = repo;
         }
 
-
-
         public ViewResult Index() => View("Home");
 
         public ViewResult RecipeList()
@@ -28,12 +26,12 @@ namespace asgn2.Controllers
         [HttpGet]
         public ViewResult AddRecipe() => View();
 
-      //  [HttpPost]
-        //public ViewResult AddRecipe(Recipes guestRecipe)
-       // {
-            //Repository.AddResponse(guestRecipe);
-            //return View("Home");
-       // }
+        [HttpPost]
+        public ViewResult AddRecipe(Recipes guestRecipe)
+        {
+            repository.AddResponse(guestRecipe);
+            return View("Home");
+        }
 
         public ViewResult ViewRecipe(int id)
         {

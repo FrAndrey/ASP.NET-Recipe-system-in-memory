@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace asgn2.Models
 {
-    public class Repository : IRecipeRepository
+   /* public class Repository : IRecipeRepository
     {
         public IEnumerable<Recipes> Recipes => new List<Recipes>
         { 
@@ -25,4 +25,5 @@ namespace asgn2.Models
 
 
     }
+    */
 }
