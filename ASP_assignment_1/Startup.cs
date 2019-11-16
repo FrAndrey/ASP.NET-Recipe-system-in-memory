@@ -28,8 +28,6 @@ namespace asgn2
             options.UseSqlServer(Configuration["Data:RecipeSystemRecipes:ConnectionString"])
             );
 
-
-
             services.AddTransient<IRecipeRepository,EFRecipeRepository>();
             services.AddMvc();
         }
@@ -43,7 +41,6 @@ namespace asgn2
                 app.UseDeveloperExceptionPage();
             }
             app.UseStaticFiles();
-            //app.UseMvcWithDefaultRoute();
             app.UseMvc(
                 routes =>
                 {
@@ -56,10 +53,7 @@ namespace asgn2
                     routes.MapRoute(
                         name: "product",
                         template: "{controller}/{action}/{id?}"
-
                         );
-
-
                 }
                 );
             SeedData.EnsurePopulated(app);
