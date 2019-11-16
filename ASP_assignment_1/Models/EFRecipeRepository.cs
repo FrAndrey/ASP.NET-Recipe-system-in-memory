@@ -19,6 +19,7 @@ namespace asgn2.Models
         public void AddResponse(Recipes guestRecipe)
         {
             context.Recipes.Add(guestRecipe);
+            context.SaveChanges();
         }
     }
 }
