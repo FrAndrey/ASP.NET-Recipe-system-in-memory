@@ -8,7 +8,6 @@ namespace asgn2.Models
     public class EFRecipeRepository : IRecipeRepository
     {
         private static ApplicationDbContext context;
-
         public  EFRecipeRepository (ApplicationDbContext ctx)
         {
             context = ctx;
