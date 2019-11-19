@@ -26,9 +26,10 @@ namespace asgn2.Controllers
             );
 
         [HttpPost]
-        public ViewResult Edit()
+        public IActionResult Edit(Recipes adminUpdate)
         {
-
+           repository.UpdateRecipe(adminUpdate);
+            return RedirectToAction("Index");
 
         }
 

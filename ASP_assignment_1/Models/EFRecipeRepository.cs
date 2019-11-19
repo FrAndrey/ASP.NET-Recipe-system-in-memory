@@ -20,5 +20,21 @@ namespace asgn2.Models
             context.Recipes.Add(guestRecipe);
             context.SaveChanges();
         }
+        public void UpdateRecipe(Recipes adminUpdate)
+        {
+         if (adminUpdate.RecipeID == 0)
+            {
+                context.Recipes.Add(adminUpdate);
+            }
+         else
+            {
+                Recipes productEntry = context.Recipes.FirstOrDefault(r =>
+                    r.RecipeID == adminUpdate.RecipeID);
+            }
+
+            context.SaveChanges();
+
+
+        }
     }
 }
