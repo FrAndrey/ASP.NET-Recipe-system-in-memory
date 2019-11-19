@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Css/BasicCSS.css")" rel="stylesheet" type="text/css" />
+
+    <!--<link href="~/Css/BasicCSS.css" rel="stylesheet" type="text/css" />-->
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!--<header>
+        <a asp-action="Index">Home</a>
+        <a asp-action="AddRecipe">Add New Recipe</a>
+        <a asp-action="RecipeList">Recipe List</a>
+
+
+    </header>-->
+
+        @RenderBody()
+        <footer>Andrey Fr. Assignment 02 for ASP.NET MVC</footer>
+    </div>
+    <script src="~/app.js"></script>
+</body>
+</html>

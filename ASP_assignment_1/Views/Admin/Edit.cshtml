@@ -1,0 +1,35 @@
+﻿@model asgn2.Models.Recipes
+
+@{
+    ViewBag.Title = "Edit Product";
+    Layout = "_AdminLayout";
+}
+
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="@Model.RecipeID" />
+
+        <div>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+        </div>
+        <div>
+            <label asp-for="Ingredients"></label>
+            <input asp-for="Ingredients" />
+        </div>
+        <div>
+            <label asp-for="Description"></label>
+            <input asp-for="Description" />
+        </div>
+        <div>
+            <label asp-for="RecipeCategory"></label>
+            <input asp-for="RecipeCategory" />
+        </div>
+
+        <div>
+            <button type="submit">Save</button>
+            <a asp-for="Index">Cancel</a>
+
+        </div>
+
+
+    </form>

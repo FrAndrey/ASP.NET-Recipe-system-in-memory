@@ -1,0 +1,44 @@
+﻿@model IEnumerable<asgn2.Models.Recipes>
+
+
+@{
+ViewBag.Title = "Admin Control Panel";
+Layout = "_AdminLayout";
+
+}
+
+
+    <table>
+        <tr>
+        <thead>ID</thead>
+        <thead>Name</thead>
+        <thead>Ingredients</thead>
+        <thead>Actions</thead>
+        </tr>
+
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.RecipeID</td>
+                <td>@r.Name</td>
+                <td>@r.Ingredients</td>
+                <td>
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" name="RecipeId" value="@r.RecipeID" />
+
+                        <a asp-action="Edit" asp-route-id="@r.RecipeID">Edit</a>
+
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+
+<div>
+    <a asp-action="Create">Add Product</a>
+</div>
+
+
+
+
