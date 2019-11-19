@@ -11,7 +11,7 @@ namespace asgn2.Controllers
     {
         private IRecipeRepository repository;
 
-       public AdminController(IRecipeRepository repo)
+        public AdminController(IRecipeRepository repo)
         {
             repository = repo;
         }
@@ -19,14 +19,20 @@ namespace asgn2.Controllers
         {
             return View(repository.Recipes);
         }
-
+        [HttpGet]
         public ViewResult Edit(int id) => View(repository.Recipes
             .Where(o => o.RecipeID == id)
             .FirstOrDefault()
             );
 
+        [HttpPost]
+        public ViewResult Edit()
+        {
+
+
+        }
 
 
 
-    }
+  }
 }
