@@ -29,6 +29,7 @@ namespace asgn2.Controllers
         public IActionResult Edit(Recipes adminUpdate)
         {
            repository.UpdateRecipe(adminUpdate);
+            TempData["message"] = $"{adminUpdate.Name} has been saved";
             return RedirectToAction("Index");
 
         }

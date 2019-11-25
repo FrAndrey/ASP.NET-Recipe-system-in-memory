@@ -30,6 +30,13 @@ namespace asgn2.Models
             {
                 Recipes productEntry = context.Recipes.FirstOrDefault(r =>
                     r.RecipeID == adminUpdate.RecipeID);
+
+                if (productEntry != null)
+                {
+                    productEntry.Name = adminUpdate.Name;
+                    productEntry.Ingredients = adminUpdate.Ingredients;
+                    productEntry.Description = adminUpdate.Description;
+                }
             }
 
             context.SaveChanges();
