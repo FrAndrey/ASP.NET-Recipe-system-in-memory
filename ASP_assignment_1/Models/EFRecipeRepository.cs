@@ -30,7 +30,6 @@ namespace asgn2.Models
             {
                 Recipes productEntry = context.Recipes.FirstOrDefault(r =>
                     r.RecipeID == adminUpdate.RecipeID);
-
                 if (productEntry != null)
                 {
                     productEntry.Name = adminUpdate.Name;
@@ -38,10 +37,25 @@ namespace asgn2.Models
                     productEntry.Description = adminUpdate.Description;
                 }
             }
-
             context.SaveChanges();
+        }
+        public Recipes DeleteRecipe(int id)
+        {
+            Recipes productEntry = context.Recipes.FirstOrDefault(r =>
+                    r.RecipeID == id);
 
+            if (productEntry != null)
+            {
+                context.Recipes.Remove(productEntry);
+                context.SaveChanges();
+            }
+            return productEntry;
+
+
+
+            }
 
         }
+
     }
-}
+

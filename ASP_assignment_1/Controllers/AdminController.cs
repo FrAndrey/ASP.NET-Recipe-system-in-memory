@@ -33,7 +33,17 @@ namespace asgn2.Controllers
             return RedirectToAction("Index");
 
         }
-
+        [HttpPost]
+        public IActionResult Delete (int id)
+        {
+            Recipes deletedRecipe = repository.DeleteRecipe(id);
+            
+            if (deletedRecipe != null)
+            {
+                TempData["message"] = $"Recipe {deletedRecipe.Name} was deleted.";
+            }
+            return RedirectToAction("Index");
+        }
 
 
   }

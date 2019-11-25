@@ -24,7 +24,7 @@ Layout = "_AdminLayout";
                 <td>@r.Ingredients</td>
                 <td>
                     <form asp-action="Delete" method="post">
-                        <input type="hidden" name="RecipeId" value="@r.RecipeID" />
+                        <input type="hidden" name="id" value="@r.RecipeID" />
 
                         <a asp-action="Edit" asp-route-id="@r.RecipeID">Edit</a>
 

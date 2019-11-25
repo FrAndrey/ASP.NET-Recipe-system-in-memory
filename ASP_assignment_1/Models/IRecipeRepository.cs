@@ -12,6 +12,7 @@ namespace asgn2.Models
 
         void AddResponse(Recipes guestRecipe);
         void UpdateRecipe(Recipes adminUpdate);
+        Recipes DeleteRecipe(int id);
     }
       
 
