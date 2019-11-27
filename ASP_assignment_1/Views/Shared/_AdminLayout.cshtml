@@ -11,7 +11,14 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
+
     <div class="wrapper">
+        <header>
+            <a asp-action="Index" asp-controller="Home">Home</a>
+            <a asp-action="AddRecipe" asp-controller="Home">Add New Recipe</a>
+            <a asp-action="RecipeList" asp-controller="Home">Recipe List</a>
+        </header>
+        <br />
         @if (TempData["message"] != null)
         {
             <div class="succesfull">

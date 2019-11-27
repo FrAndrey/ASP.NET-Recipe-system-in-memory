@@ -54,9 +54,18 @@ table {
     left:50%;
     transform:translate(-50%,0%);
 }
-
-a:hover{
+.succesfull {
+    display:block;
+    background:lightgreen;
     color:white;
+
+}
+#admin {
+    color:red;
+    font-size:23px;
+}
+a:hover {
+    color: white;
 }
 textarea {
     border-radius:10px;

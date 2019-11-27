@@ -10,10 +10,10 @@ Layout = "_AdminLayout";
 
     <table>
         <tr>
-        <thead>ID</thead>
-        <thead>Name</thead>
-        <thead>Ingredients</thead>
-        <thead>Actions</thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Ingredients</th>
+        <th>Actions</th>
         </tr>
 
         @foreach (var r in Model)
@@ -34,11 +34,6 @@ Layout = "_AdminLayout";
             </tr>
         }
     </table>
-
-<div>
-    <a asp-action="Create">Add Product</a>
-</div>
-
 
 
 
