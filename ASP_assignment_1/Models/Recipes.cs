@@ -19,20 +19,5 @@ namespace asgn2.Models
         public string imagePath { get; set; }
 
         public int RecipeCategory { get; set; }
-
-
-
-
-
-        // public static int globalRecipeID;
-        /* public Recipes(string nam, string Ingred, string Descr)
-         {
-             RecipeID = Interlocked.Increment(ref globalRecipeID);
-             Name = nam;
-             Ingredients = Ingred;
-             Description = Descr;
-
-         }*/
-
     }
 }

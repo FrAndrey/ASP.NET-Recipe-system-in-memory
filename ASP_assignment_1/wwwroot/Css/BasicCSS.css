@@ -56,8 +56,10 @@ table {
 }
 .succesfull {
     display:block;
+    margin-top:15px;
     background:lightgreen;
     color:white;
+    font-size:19px;
 
 }
 #admin {

@@ -30,6 +30,7 @@ namespace asgn2.Controllers
         public ViewResult AddRecipe(Recipes guestRecipe)
         {
             repository.AddResponse(guestRecipe);
+            TempData["message"] = $"Recipe {guestRecipe.Name} was added";
             return View("Home");
         }
 

@@ -35,6 +35,7 @@ namespace asgn2.Models
                     productEntry.Name = adminUpdate.Name;
                     productEntry.Ingredients = adminUpdate.Ingredients;
                     productEntry.Description = adminUpdate.Description;
+                    productEntry.RecipeCategory = adminUpdate.RecipeCategory;
                 }
             }
             context.SaveChanges();

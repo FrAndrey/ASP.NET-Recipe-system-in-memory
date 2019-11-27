@@ -10,11 +10,7 @@ namespace asgn2.Models
     public class ApplicationDbContext : DbContext 
     {
         public ApplicationDbContext (DbContextOptions<ApplicationDbContext> options) : base(options) { }
-
         public DbSet<Recipes> Recipes { get; set; }
-
-     
-
 
     }
 }
