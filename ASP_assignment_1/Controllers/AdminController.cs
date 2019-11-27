@@ -40,7 +40,7 @@ namespace asgn2.Controllers
             
             if (deletedRecipe != null)
             {
-                TempData["message"] = $"Recipe {deletedRecipe.Name} was deleted.";
+                TempData["message"] = $"Recipe {deletedRecipe.Name} was deleted";
             }
             return RedirectToAction("Index");
         }

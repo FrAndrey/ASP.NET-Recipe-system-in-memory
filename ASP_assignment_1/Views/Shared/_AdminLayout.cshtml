@@ -12,14 +12,12 @@
 </head>
 <body>
     <div class="wrapper">
-        <!--<header>
-        <a asp-action="Index">Home</a>
-        <a asp-action="AddRecipe">Add New Recipe</a>
-        <a asp-action="RecipeList">Recipe List</a>
-
-
-    </header>-->
-
+        @if (TempData["message"] != null)
+        {
+            <div class="succesfull">
+                @TempData["message"]
+            </div>
+        }
         @RenderBody()
         <footer>Andrey Fr. Assignment 02 for ASP.NET MVC</footer>
     </div>
